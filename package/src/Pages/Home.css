@@ -1,0 +1,72 @@
+/* Center alignment and spacing */
+.home-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Buttons container styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Spacing between buttons */
+  margin-top: 1.5rem;
+}
+
+/* Buttons styling */
+.button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Different button colors */
+.button-medical {
+  background-color: #ef5350; /* Red for Medical */
+}
+
+.button-school {
+  background-color: #42a5f5; /* Blue for School */
+}
+
+.button-food {
+  background-color: #ff7043; /* Orange for Food */
+}
+
+.button-shelter {
+  background-color: #66bb6a; /* Green for Shelter */
+}
+
+/* Modal styling */
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
